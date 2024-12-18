@@ -1,0 +1,55 @@
+/* Set base styles for the entire body */
+body {
+  margin: 0; /* Remove default browser margin */
+  font-family: Arial, sans-serif; /* Use Arial as the default font with a fallback to sans-serif */
+  display: flex; /* Use flexbox for aligning child elements */
+  justify-content: center; /* Center the container horizontally */
+  align-items: center; /* Center the container vertically */
+  min-height: 100vh; /* Ensure the body takes up at least the full viewport height */
+  background-color: #f4f4f4; /* Light gray background for a clean aesthetic */
+}
+
+/* Define styles for the main container holding the product cards */
+.container {
+  display: flex; /* Use flexbox for arranging cards in a row */
+  gap: 20px; /* Add spacing between the cards */
+}
+
+/* Define styles for individual product cards */
+.card {
+  width: 250px; /* Set a fixed width for the cards */
+  padding: 20px; /* Add internal spacing inside the card */
+  color: white; /* Default text color for card content */
+  border-radius: 10px; /* Round the corners of the cards */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for a raised effect */
+  text-align: center; /* Center-align the card content */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Style for images inside the product cards */
+.card img {
+  height: 200px; /* Set a fixed height for the image */
+  width: 100%; /* Make the image span the full width of the card */
+  border-radius: 10px; /* Round the corners of the images */
+}
+
+/* Hover effect for the product cards */
+.card:hover {
+  transform: scale(1.05); /* Slightly enlarge the card when hovered */
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3); /* Increase shadow intensity on hover for emphasis */
+}
+
+/* Style for the "Buy Now" button */
+.buy-now {
+  background-color: black; /* Set the button's background color */
+  color: white; /* Set the text color */
+  border: none; /* Remove default border styling */
+  padding: 10px; /* Add internal spacing for the button */
+  margin-top: 10px; /* Add spacing above the button */
+  cursor: pointer; /* Change cursor to a pointer on hover to indicate interactivity */
+}
+
+/* Hover effect for the "Buy Now" button */
+.buy-now:hover {
+  background-color: #333; /* Darken the button background color on hover */
+}
